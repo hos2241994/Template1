@@ -510,19 +510,19 @@ h1, h2, h3, h4, h5, h6 {
 /*offer Section*/
 .offer-content{
     overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
 }
 
 .offer-item{
-    width: 30%;
-    float: left;
-    margin-bottom: 20px;
     border: 1px solid #e8e8e8;
     padding: 20px 15px 30px 70px;
     position: relative;
 }
 
 .offer-item.mg{
-    margin:0 5%;
+    margin:0 0;
 }
 
 .offer-item .icon{
@@ -553,6 +553,7 @@ h1, h2, h3, h4, h5, h6 {
     .offer-content{
         display: flex;
         flex-direction: column;
+        height: auto;
         align-items: center;
     }
     
